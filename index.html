@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,21 +21,36 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>We offer creative, hands-on art and craft classes that inspire imagination in kids of all ages. Join us for painting, paper crafts, clay, and more!</p>
+    <p>We offer creative, hands-on art and craft classes that inspire imagination in kids of all ages. Join us for painting, clay modelling, and more!</p>
+  </section>
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-<img src="https://images.unsplash.com/photo-1601987077959-6c1385b51612?fit=crop&w=400&h=300" alt="Kids Painting">
-<img src="https://images.unsplash.com/photo-1581093588401-16e7f88b0161?fit=crop&w=400&h=300" alt="Art Class">
-<img src="https://images.unsplash.com/photo-1622551813054-7ea7f2b4fae0?fit=crop&w=400&h=300" alt="Crafts Activity">
-  </div>
-
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1601987077959-6c1385b51612?fit=crop&w=400&h=300" alt="Kids Painting">
+      <img src="https://images.unsplash.com/photo-1581093588401-16e7f08b0161?fit=crop&w=400&h=300" alt="Art Class">
+      <img src="https://images.unsplash.com/photo-1622551813054-7ea7f2bf4ae0?fit=crop&w=400&h=300" alt="Crafts Activity">
+    </div>
   </section>
 
   <section id="book">
     <h2>Book a Class</h2>
-    <button onclick="alert('Booking feature coming soon!')">Click to Book</button>
+    <form>
+      <label for="name">Child's Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" required><br><br>
+
+      <label for="class">Preferred Class:</label><br>
+      <select id="class" name="class">
+        <option value="painting">Painting</option>
+        <option value="crafts">Crafts</option>
+        <option value="clay">Clay Modelling</option>
+      </select><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
   </section>
 
   <footer>
@@ -44,3 +60,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+  
